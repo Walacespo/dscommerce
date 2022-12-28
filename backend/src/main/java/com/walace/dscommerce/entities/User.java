@@ -24,6 +24,7 @@ public class User {
 	
 	@Column(unique = true)
 	private String email;
+	private String phone;
 	private LocalDate birthDate;
 	private String password;
 	
@@ -81,6 +82,14 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	@Override
